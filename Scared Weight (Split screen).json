@@ -563,6 +563,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/22a7d926ef05e3d3f6daeb51f4ac68418350700430f669f94c39ed4948093fac_Dino Vita_Sneak_6.png",
           "name": "Dino Vita_Sneak_6.png"
         }
+      },
+      {
+        "file": "pngimg.com - frying_pan_PNG8345.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pngimg.com - frying_pan_PNG8345.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -756,6 +764,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 56,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "NewSprite4",
+          "persistentUuid": "53dbf6a1-00a4-4858-a59e-df76344b7ba2",
+          "width": 116,
+          "x": 296,
+          "y": -631,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -868,10 +893,10 @@
           "effects": [],
           "behaviors": [
             {
-              "gravity": 1000,
-              "ignoreDefaultControls": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
               "acceleration": 1500,
               "canGrabPlatforms": false,
               "deceleration": 1500,
@@ -1507,10 +1532,10 @@
               "masks": 1
             },
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1575,10 +1600,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1667,10 +1692,10 @@
               "masks": 1
             },
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1724,6 +1749,97 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite4",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Dynamic",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            },
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pngimg.com - frying_pan_PNG8345.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 1
+                          },
+                          {
+                            "x": 1597,
+                            "y": 1
+                          },
+                          {
+                            "x": 1597,
+                            "y": 885
+                          },
+                          {
+                            "x": 0,
+                            "y": 885
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1761,6 +1877,9 @@
           },
           {
             "objectName": "NewSprite3"
+          },
+          {
+            "objectName": "NewSprite4"
           },
           {
             "objectName": "NewSprite"
@@ -2034,13 +2153,32 @@
           "conditions": [
             {
               "type": {
-                "value": "Physics2::Collision"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "NewSprite2",
-                "Physics2",
-                "Platform",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite2",
+                    "Physics2",
+                    "Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite2",
+                    "Physics2",
+                    "NewSprite",
+                    ""
+                  ]
+                }
               ]
             },
             {
@@ -2088,13 +2226,32 @@
           "conditions": [
             {
               "type": {
-                "value": "Physics2::Collision"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "NewSprite3",
-                "Physics2",
-                "Platform",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite3",
+                    "Physics2",
+                    "Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite3",
+                    "Physics2",
+                    "NewSprite",
+                    ""
+                  ]
+                }
               ]
             },
             {
@@ -2131,6 +2288,79 @@
               },
               "parameters": [
                 "NewSprite3",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite4",
+                    "Physics2",
+                    "Platform",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "NewSprite4",
+                    "Physics2",
+                    "NewSprite",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "NewSprite4",
+                "=",
+                "Random(680)",
+                "=",
+                "-100"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "NewSprite4",
                 "=",
                 "0"
               ]
@@ -2162,7 +2392,7 @@
                 "=",
                 "Random(680)",
                 "=",
-                "300"
+                "100\n"
               ]
             }
           ]
@@ -2279,6 +2509,132 @@
                 "Player",
                 "Flippable",
                 "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "NewSprite2",
+                "Physics2",
+                "Platform",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite2",
+                "1000",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "NewSprite3",
+                "Physics2",
+                "Platform",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite3",
+                "1000",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite4",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Physics2::Collision"
+              },
+              "parameters": [
+                "NewSprite4",
+                "Physics2",
+                "Platform",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Player",
+                "NewSprite4",
+                "1000",
+                "0"
               ]
             }
           ]
@@ -5784,6 +6140,365 @@
           "variants": []
         }
       ]
+    },
+    {
+      "author": "",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Speed restrictions",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXNwZWVkb21ldGVyIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyLDE2QTMsMyAwIDAsMSA5LDEzQzksMTEuODggOS42MSwxMC45IDEwLjUsMTAuMzlMMjAuMjEsNC43N0wxNC42OCwxNC4zNUMxNC4xOCwxNS4zMyAxMy4xNywxNiAxMiwxNk0xMiwzQzEzLjgxLDMgMTUuNSwzLjUgMTYuOTcsNC4zMkwxNC44Nyw1LjUzQzE0LDUuMTkgMTMsNSAxMiw1QTgsOCAwIDAsMCA0LDEzQzQsMTUuMjEgNC44OSwxNy4yMSA2LjM0LDE4LjY1SDYuMzVDNi43NCwxOS4wNCA2Ljc0LDE5LjY3IDYuMzUsMjAuMDZDNS45NiwyMC40NSA1LjMyLDIwLjQ1IDQuOTMsMjAuMDdWMjAuMDdDMy4xMiwxOC4yNiAyLDE1Ljc2IDIsMTNBMTAsMTAgMCAwLDEgMTIsM00yMiwxM0MyMiwxNS43NiAyMC44OCwxOC4yNiAxOS4wNywyMC4wN1YyMC4wN0MxOC42OCwyMC40NSAxOC4wNSwyMC40NSAxNy42NiwyMC4wNkMxNy4yNywxOS42NyAxNy4yNywxOS4wNCAxNy42NiwxOC42NVYxOC42NUMxOS4xMSwxNy4yIDIwLDE1LjIxIDIwLDEzQzIwLDEyIDE5LjgxLDExIDE5LjQ2LDEwLjFMMjAuNjcsOEMyMS41LDkuNSAyMiwxMS4xOCAyMiwxM1oiIC8+PC9zdmc+",
+      "name": "SpeedRestrictions",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/speedometer.svg",
+      "shortDescription": "Limit the maximum movement and rotation speed of an object from forces or the physics behavior.",
+      "version": "0.1.0",
+      "description": [
+        "Limit the maximum movement and rotation speed of an object from forces or the physics behavior.",
+        "",
+        "How to use:",
+        "- Add the behavior that matches the method used to move the object (forces or physics)",
+        "- Set the maximum speed value in the behavior properties",
+        "",
+        "Tips:",
+        "- This only affects movement caused by forces or physics behavior",
+        "- This may not affect movement caused by other behaviors (platformer, top-down, draggable, etc)"
+      ],
+      "origin": {
+        "identifier": "SpeedRestrictions",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "physics",
+        "maximum",
+        "speed",
+        "velocity",
+        "physics",
+        "force",
+        "limit"
+      ],
+      "authorIds": [
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Limit the maximum speed an object will move from (non-physics) forces.",
+          "fullName": "Enforce max movement speed",
+          "name": "MaxMovementSpeed_Forces",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Vitesse"
+                      },
+                      "parameters": [
+                        "Object",
+                        ">",
+                        "MaximumSpeed"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentSpeedX",
+                        "=",
+                        "Object.ForceX()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentSpeedY",
+                        "=",
+                        "Object.ForceY()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentSpeed",
+                        "=",
+                        "Object.ForceLength()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "CurrentSpeedX * MaximumSpeed / CurrentSpeed",
+                        "CurrentSpeedY * MaximumSpeed / CurrentSpeed",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpeedRestrictions::MaxMovementSpeed_Forces",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Maximum speed (pixels/second)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "MaximumSpeed"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentSpeedX"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentSpeedY"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "CurrentSpeed"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        },
+        {
+          "description": "Limit the maximum speed an object will move from physics forces.",
+          "fullName": "Enforce max movement speed (physics)",
+          "name": "MaxMovementSpeed_Physics",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Physics2::LinearVelocityLength"
+                      },
+                      "parameters": [
+                        "Object",
+                        "PhysicsBehavior",
+                        ">",
+                        "MaximumSpeed"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Physics2::LinearVelocityX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "PhysicsBehavior",
+                        "*",
+                        "MaximumSpeed / Object. PhysicsBehavior::LinearVelocity()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Physics2::LinearVelocityY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "PhysicsBehavior",
+                        "*",
+                        "MaximumSpeed / Object. PhysicsBehavior::LinearVelocity()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpeedRestrictions::MaxMovementSpeed_Physics",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Physics Behavior (required)",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "Physics2::Physics2Behavior"
+              ],
+              "name": "PhysicsBehavior"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Maximum speed (pixels/second)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "MaximumSpeed"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        },
+        {
+          "description": "Limit the maximum rotation speed of an object from physics forces.",
+          "fullName": "Enforce max rotation speed (physics)",
+          "name": "MaxRotationSpeed_Physics",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "abs(Object.PhysicsBehavior::AngularVelocity())",
+                        ">",
+                        "MaximumRotationSpeed"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Physics2::AngularVelocity"
+                      },
+                      "parameters": [
+                        "Object",
+                        "PhysicsBehavior",
+                        "*",
+                        "abs(MaximumRotationSpeed / Object.PhysicsBehavior::AngularVelocity())"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "SpeedRestrictions::MaxRotationSpeed_Physics",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Physics Behavior (required)",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "Physics2::Physics2Behavior"
+              ],
+              "name": "PhysicsBehavior"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Maximum rotation speed (degrees/second)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "name": "MaximumRotationSpeed"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
     }
   ],
   "externalLayouts": []
