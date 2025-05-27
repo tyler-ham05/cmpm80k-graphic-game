@@ -571,6 +571,64 @@
         "name": "pngimg.com - frying_pan_PNG8345.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "yellow.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "yellow.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump 1.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "9e6314ff5ebeaa2ae69347b277085c2aa4458f4ea898cddfe1ebce466a1dbc0d_Jump 1.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Jump/9e6314ff5ebeaa2ae69347b277085c2aa4458f4ea898cddfe1ebce466a1dbc0d_Jump 1.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Walk_01.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "9e6c1c3f9594ea0796b8bbd636507bfe04625bc14344d5fc2a673e0da51030d7_Walk_01.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/DirtyGround/Walk/9e6c1c3f9594ea0796b8bbd636507bfe04625bc14344d5fc2a673e0da51030d7_Walk_01.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Hit 4.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -602,7 +660,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8324563526888997,
+        "zoomFactor": 0.42884496962478214,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -623,6 +681,11 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
+            {
+              "name": "health",
+              "type": "number",
+              "value": 3
+            },
             {
               "name": "id",
               "type": "string",
@@ -645,6 +708,11 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": [
+            {
+              "name": "health",
+              "type": "number",
+              "value": 3
+            },
             {
               "name": "id",
               "type": "string",
@@ -671,11 +739,12 @@
         {
           "angle": 0,
           "customSize": true,
+          "depth": 1,
           "height": 728,
           "layer": "",
           "name": "Background",
           "persistentUuid": "e4a3df55-c36a-4d77-beef-8746310ea3c0",
-          "width": 3410,
+          "width": 1260,
           "x": -247,
           "y": -109,
           "zOrder": 0,
@@ -687,13 +756,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 389,
+          "height": 1332,
           "layer": "",
           "name": "WorldBorders",
           "persistentUuid": "a7c02fda-683d-46cc-9d10-cfb88b413752",
           "width": 4,
           "x": -88,
-          "y": 180,
+          "y": -251,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -702,13 +771,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 500,
+          "depth": 1,
+          "height": 1377,
           "layer": "",
           "name": "WorldBorders",
           "persistentUuid": "5501ff86-5b9b-4f13-a4d6-49250a4c9ee3",
           "width": 5,
           "x": 898,
-          "y": 69,
+          "y": -268,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -737,7 +807,7 @@
           "depth": 1,
           "height": 64,
           "keepRatio": true,
-          "layer": "UI",
+          "layer": "",
           "name": "NewSprite",
           "persistentUuid": "7cb22840-8647-423e-b47a-b15194a9f3ac",
           "width": 1407,
@@ -754,7 +824,7 @@
           "depth": 1,
           "height": 73,
           "keepRatio": true,
-          "layer": "UI",
+          "layer": "",
           "name": "NewSprite3",
           "persistentUuid": "e54a397c-9a5a-4c2d-9e7d-179402d973e2",
           "width": 77,
@@ -771,13 +841,139 @@
           "depth": 1,
           "height": 56,
           "keepRatio": true,
-          "layer": "UI",
+          "layer": "",
           "name": "NewSprite4",
           "persistentUuid": "53dbf6a1-00a4-4858-a59e-df76344b7ba2",
           "width": 116,
           "x": 296,
           "y": -631,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlatHeartBar",
+          "persistentUuid": "742c9571-8d4e-492a-8e44-99423cefef95",
+          "width": 0,
+          "x": 3,
+          "y": 4,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlatHeartBar",
+          "persistentUuid": "fe721099-f79d-4644-adb5-07edc60a304f",
+          "width": 0,
+          "x": 527,
+          "y": 5,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "roundend",
+          "persistentUuid": "5808645d-d60e-48ed-a032-3e0e3a22ef9d",
+          "width": 0,
+          "x": 372,
+          "y": -1288,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "98583442-3e94-48dc-a02b-460c02780b46",
+          "width": 668,
+          "x": 1768,
+          "y": 569,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "roundend",
+          "persistentUuid": "d4ae42c3-77eb-4230-b67e-32429e8e45e7",
+          "width": 0,
+          "x": 2061,
+          "y": 338,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 861,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite",
+          "persistentUuid": "1f905a83-b374-4a18-95da-4fd51e2e4061",
+          "width": 1480,
+          "x": 1347,
+          "y": -148,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 34,
+          "keepRatio": true,
+          "layer": "",
+          "name": "roundend",
+          "persistentUuid": "2168f912-6ef0-4edb-996c-89bba4ef8fd5",
+          "width": 382,
+          "x": 1894,
+          "y": 274,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1468,7 +1664,13 @@
           "name": "FlatHeartBar",
           "type": "TiledUnitsBar::TiledUnitsBar",
           "variant": "",
-          "variables": [],
+          "variables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "content": {
@@ -1840,6 +2042,107 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "endround",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "roundend",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "Variable",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "string": "\"DIDY PARTY\"",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "\"DIDY PARTY\"",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 3200,
+          "name": "NewTiledSprite",
+          "texture": "yellow.jpg",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 3200,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -1853,6 +2156,9 @@
           },
           {
             "objectName": "Player"
+          },
+          {
+            "objectName": "endround"
           },
           {
             "objectName": "Tag"
@@ -1883,6 +2189,12 @@
           },
           {
             "objectName": "NewSprite"
+          },
+          {
+            "objectName": "roundend"
+          },
+          {
+            "objectName": "NewTiledSprite"
           }
         ]
       },
@@ -1899,7 +2211,17 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"footsteps\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -2394,6 +2716,29 @@
                 "=",
                 "100\n"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "health",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -2638,6 +2983,310 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "id",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Player",
+                "id",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "=",
+                "Player.health",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "id",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Player",
+                "id",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                "=",
+                "Player.health",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "health",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Player",
+                "id",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "2073",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "roundend",
+                "Text",
+                "=",
+                "\"Player 1 wins the round!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "FlatHeartBar"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Player",
+                "id",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "health",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "2073",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "roundend",
+                "Text",
+                "=",
+                "\"Player 2 wins the round!\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "FlatHeartBar"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"footsteps\"",
+                ">=",
+                ".4"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "9e6c1c3f9594ea0796b8bbd636507bfe04625bc14344d5fc2a673e0da51030d7_Walk_01.wav",
+                "no",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"footsteps\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnFloor"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
