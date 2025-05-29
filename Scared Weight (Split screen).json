@@ -629,6 +629,46 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/a01a5e673d5b3c7319b145c85379f1212b603002d6eb7754d37d53fd4b675613_Hit 4.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "Crown-icon-design-on-transparent-background-PNG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown-icon-design-on-transparent-background-PNG.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Crown-icon-design-on-transparent-background-PNG (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown-icon-design-on-transparent-background-PNG (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Crown-icon-design-on-transparent-background-PNG (1)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown-icon-design-on-transparent-background-PNG (1)2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Crown-icon-design-on-transparent-background-PNG (1) (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown-icon-design-on-transparent-background-PNG (1) (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Crown-icon-design-on-transparent-background-PNG (1) (1)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Crown-icon-design-on-transparent-background-PNG (1) (1)2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -660,7 +700,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.42884496962478214,
+        "zoomFactor": 0.29776022687853476,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -948,14 +988,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 861,
+          "height": 873,
           "keepRatio": true,
           "layer": "",
           "name": "NewTiledSprite",
           "persistentUuid": "1f905a83-b374-4a18-95da-4fd51e2e4061",
-          "width": 1480,
-          "x": 1347,
-          "y": -148,
+          "width": 1500,
+          "x": 1327,
+          "y": -154,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -972,11 +1012,189 @@
           "persistentUuid": "2168f912-6ef0-4edb-996c-89bba4ef8fd5",
           "width": 382,
           "x": 1894,
-          "y": 274,
+          "y": 163,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 56,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "b6ae1127-8045-4b4b-b6a4-4f8d9672e9ef",
+          "width": 998,
+          "x": 1745,
+          "y": 268,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 144,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite2",
+          "persistentUuid": "4a94b0c6-08fa-4070-9ee4-386325284dd3",
+          "width": 7,
+          "x": 1454,
+          "y": 413,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 146,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite3",
+          "persistentUuid": "d2a4ee9b-77c5-4ec0-83e1-ccfafb59f1fd",
+          "width": 8,
+          "x": 2274,
+          "y": 410,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 91,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite2",
+          "persistentUuid": "aaa539fb-e4d9-42d7-848d-de5093ee71f1",
+          "width": 6,
+          "x": 1706,
+          "y": 334,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 89,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewTiledSprite3",
+          "persistentUuid": "7b73142a-d8be-42c0-ae78-aff0d126adda",
+          "width": 9,
+          "x": 2224,
+          "y": 350,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "0a1dd7dc-f8b7-4e5a-91fe-9c3c08ba24f7",
+          "width": 668,
+          "x": 94,
+          "y": 1973,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 728,
+          "layer": "",
+          "name": "Background",
+          "persistentUuid": "6186b28d-b7c7-4955-9199-57644aad9f27",
+          "width": 1260,
+          "x": -230,
+          "y": 1286,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "4a4f6f8f-7fdd-4577-a07b-89f04e1f9b73",
+          "width": 1407,
+          "x": -289,
+          "y": 2083,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlatHeartBar",
+          "persistentUuid": "a66d8ae1-1629-47a2-afd3-25aee1355722",
+          "width": 0,
+          "x": 20,
+          "y": 1399,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlatHeartBar",
+          "persistentUuid": "eafd8870-762c-482d-aaae-2824b8689500",
+          "width": 0,
+          "x": 544,
+          "y": 1400,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "id",
+              "type": "number",
+              "value": 2
+            }
+          ]
         }
       ],
       "objects": [
@@ -2102,7 +2320,7 @@
           ],
           "effects": [],
           "behaviors": [],
-          "string": "\"DIDY PARTY\"",
+          "string": "Player 2 wins the round!",
           "font": "",
           "textAlignment": "center",
           "characterSize": 40,
@@ -2125,7 +2343,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "\"DIDY PARTY\"",
+            "text": "Player 2 wins the round!",
             "font": "",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -2140,6 +2358,70 @@
           "texture": "yellow.jpg",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 3200,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Player 1                        Player 2",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Player 1                        Player 2",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite2",
+          "texture": "Crown-icon-design-on-transparent-background-PNG (1) (1).png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite3",
+          "texture": "Crown-icon-design-on-transparent-background-PNG (1) (1)2.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
           "variables": [],
           "effects": [],
           "behaviors": []
@@ -2195,6 +2477,15 @@
           },
           {
             "objectName": "NewTiledSprite"
+          },
+          {
+            "objectName": "NewText"
+          },
+          {
+            "objectName": "NewTiledSprite2"
+          },
+          {
+            "objectName": "NewTiledSprite3"
           }
         ]
       },
@@ -2223,18 +2514,6 @@
             }
           ],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Remap the controls of each player to be different"
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -2302,18 +2581,6 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Create name tags for each player"
-            },
-            {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Player",
               "conditions": [],
@@ -2374,18 +2641,6 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Update the position of the name tags"
-        },
-        {
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Player",
           "conditions": [
@@ -2417,32 +2672,15 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "For each player, move the camera and render into the associated screen sprite"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "After rendering all the players screens, move back the camera to those screens"
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -3080,7 +3318,7 @@
                 "Player",
                 "health",
                 "<=",
-                "0"
+                "2"
               ]
             },
             {
@@ -3093,6 +3331,12 @@
                 "=",
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -3126,6 +3370,26 @@
               "parameters": [
                 "FlatHeartBar"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"winscreen1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "NewTiledSprite2",
+                "Resizable",
+                "=",
+                "80"
+              ]
             }
           ]
         },
@@ -3140,7 +3404,7 @@
                 "Player",
                 "id",
                 "=",
-                "1"
+                "2"
               ]
             },
             {
@@ -3153,6 +3417,12 @@
                 "<=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -3185,6 +3455,26 @@
               },
               "parameters": [
                 "FlatHeartBar"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"winscreen1\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "NewTiledSprite3",
+                "Resizable",
+                "=",
+                "80"
               ]
             }
           ]
@@ -3282,6 +3572,75 @@
             }
           ],
           "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"winscreen1\"",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "1698",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "420",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "FlatHeartBar",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "420",
+                "=",
+                "1698"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
