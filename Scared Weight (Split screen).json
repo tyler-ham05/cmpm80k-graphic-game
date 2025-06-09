@@ -4735,7 +4735,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8324563526889031,
+        "zoomFactor": 0.5591454314873892,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5745,6 +5745,114 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite7",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "EllipseMovement",
+              "type": "EllipseMovement::EllipseMovement",
+              "RadiusX": 100,
+              "RadiusY": 0,
+              "LoopDuration": 6,
+              "InitialTurningLeft": false,
+              "InitialDirectionAngle": 0,
+              "ShouldRotate": false,
+              "RotationOffset": 0,
+              "CenterX": 0,
+              "CenterY": 0,
+              "MovementAngle": 0,
+              "OldX": 2.0247e-320,
+              "OldY": 2.0247e-320
+            },
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Dynamic",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 200000000,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 0,
+              "layers": 1,
+              "masks": 1
+            },
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite5",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 15
+                          },
+                          {
+                            "x": 64,
+                            "y": 15
+                          },
+                          {
+                            "x": 64,
+                            "y": 34
+                          },
+                          {
+                            "x": 0,
+                            "y": 34
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5761,6 +5869,9 @@
           },
           {
             "objectName": "NewSprite5"
+          },
+          {
+            "objectName": "NewSprite7"
           },
           {
             "objectName": "NewSprite2"
@@ -6516,7 +6627,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7290364483621318,
+        "zoomFactor": 0.4737066624452009,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6575,22 +6686,6 @@
               "value": "2"
             }
           ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 27,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "50d06bbb-719f-4444-97b2-d269727a3694",
-          "width": 668,
-          "x": 78,
-          "y": 573,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         },
         {
           "angle": 0,
@@ -6742,14 +6837,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 32,
+          "height": 21,
           "keepRatio": true,
           "layer": "",
           "name": "Platform2",
           "persistentUuid": "ad6e0555-ef24-436d-b1d7-00821556c54a",
           "width": 666,
           "x": 79,
-          "y": 569,
+          "y": 578,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -6933,24 +7028,20 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
                             "x": 373,
                             "y": 0
                           },
                           {
-                            "x": 187.5,
-                            "y": 15
+                            "x": 373,
+                            "y": 200
                           },
                           {
-                            "x": 14,
-                            "y": 37
-                          },
-                          {
-                            "x": 64.5,
-                            "y": 191.5
-                          },
-                          {
-                            "x": 367.5,
-                            "y": 185.5
+                            "x": 0,
+                            "y": 200
                           }
                         ]
                       ]
@@ -8077,7 +8168,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.875,
+        "zoomFactor": 0.741297891922236,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -8109,9 +8200,26 @@
           "name": "NewText",
           "persistentUuid": "763fd729-4fc0-4ca4-ba5e-9dd18caf3e69",
           "width": 0,
-          "x": 157,
-          "y": 287,
+          "x": 210,
+          "y": 218,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 38,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText2",
+          "persistentUuid": "4530c542-0b6f-4020-8da8-8a856df49463",
+          "width": 320,
+          "x": 242,
+          "y": 280,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8129,10 +8237,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Player 1 won 3 rounds, they are the DODGE MASTER!!!",
+          "string": "Player 1 won 3 rounds, they are the ",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 25,
           "color": {
             "b": 0,
             "g": 0,
@@ -8152,12 +8260,54 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Player 1 won 3 rounds, they are the DODGE MASTER!!!",
+            "text": "Player 1 won 3 rounds, they are the ",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 25,
             "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText2",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "DODGE MASTER!!!",
+          "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "DODGE MASTER!!!",
+            "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;0;0"
           }
         }
       ],
@@ -8166,6 +8316,9 @@
         "children": [
           {
             "objectName": "NewText"
+          },
+          {
+            "objectName": "NewText2"
           }
         ]
       },
@@ -8193,7 +8346,7 @@
                 "NewText",
                 "Text",
                 "=",
-                "\"Player 1 won 3 rounds, they are the DODGE MASTER!!!\""
+                "\"Player 1 won 3 rounds, they are the\""
               ]
             }
           ]
@@ -8221,7 +8374,7 @@
                 "NewText",
                 "Text",
                 "=",
-                "\"Player 2 won 3 rounds, they are the DODGE MASTER!!!\""
+                "\"Player 2 won 3 rounds, they are the \""
               ]
             }
           ]
